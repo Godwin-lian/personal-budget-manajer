@@ -19,12 +19,12 @@
                 </div>
             </div>
         <div class="flex flex-1 flex-col gap-2">
-            <div class=" md:flex flex-1 flex-row gap-2">
+            <div class="md:flex flex-1 flex-row gap-2">
                 <div class="flex flex-1 flex-col  group overflow-hidden">
                   <!-- img_04 -->
                   <img class="object-cover h-full transition-transform duration-300 transform group-hover:scale-110" loading="lazy" src="/grace-22.jpeg">  
                 </div>
-                <div class="md:flex flex-1 flex-col group overflow-hidden">
+                <div class=" md:flex flex-1 flex-col group overflow-hidden">
                   <!-- img_05 -->
                   <img class="object-cover h-full transition-transform duration-300 transform group-hover:scale-110" loading="lazy" src="/grace-21.jpeg">
                 </div>
