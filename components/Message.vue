@@ -19,7 +19,7 @@
     "Maaf kalau aku kadang ga peka ya, aku buatin website untuk galeri kita nanti",
     "Semoga suka, I love you sayangg",
     "Aku janji bakal lebih dengerin kamu dan belajar jadi lebih baik lagi",
-    "Kita ini pasangan yang hebat loh, pasti bisa ngelewatin semuanya bareng"
+    "Kita ini pasangan yang hebat loh, pasti bisa ngelewatin semuanya bareng",
     "Lopyu lagi ♥ :)"
   ];
 
