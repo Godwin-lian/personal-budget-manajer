@@ -39,7 +39,7 @@
         currentText.value = null;
         textIndex++;
         setTimeout(startTextSequence, 500); // Small gap between transitions
-      }, 3700); // Display each text for 4 seconds
+      }, 3800); // Display each text for 4 seconds
     } else {
       // Hide the component after the sequence ends
       setTimeout(() => {
@@ -53,7 +53,7 @@ const audio = ref<HTMLAudioElement | null>(null);
 const isPlaying = ref(false); // Tracks whether the audio is playing
 
 onMounted(() => {
-  audio.value = new Audio("/musics/blue.mp3");
+  audio.value = new Audio("/musics/blue-original.mp3");
   if (audio.value) {
     audio.value.loop = true; // Enable looping
 
