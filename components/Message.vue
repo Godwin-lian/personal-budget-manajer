@@ -8,11 +8,14 @@
   
   // Text Sequence and Timings
   const textSequence = [
-    "Masih marah sayang?",
-    "Jangan malah2 ntar aku cedihh",
-    "Aku minta maaf ya sayangkuu",
-    "Aku buat website ini sebagai permintaan maaf.",
-    "I love you sayangg",
+    "Selamat Malam Sayang",
+    "Aku harap ayang sedang berbahagia meskipun seharian udh capek kerjaa",
+    "Aku cuma mau bilang aku rinduuu",
+    "Belakangan ini sering kita berantem",
+    "aku tau itu bukan karna kita udh ga saling sayang",
+    "Tapi karna terlalu sayang, mwehehe",
+    "Maaf kalau aku kadang ga peka ya, aku buatin website untuk galeri kita nanti",
+    "Semoga suka, I love you sayangg",
   ];
   let textIndex = 0;
   
@@ -30,7 +33,7 @@
         currentText.value = null;
         textIndex++;
         setTimeout(startTextSequence, 500); // Small gap between transitions
-      }, 4000); // Display each text for 4 seconds
+      }, 3500); // Display each text for 4 seconds
     } else {
       // Hide the component after the sequence ends
       setTimeout(() => {

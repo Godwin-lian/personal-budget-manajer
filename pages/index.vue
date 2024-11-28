@@ -8,7 +8,7 @@
     <div class="max-w-screen-2xl mx-auto px-4 py-16 lg:py-24 relative">
     <div class="flex flex-col md:flex-row gap-2 border-8 border-primary">
             <div class="flex flex-1 flex-col gap-2">
-                <div class="hidden md:flex flex-1 flex-row gap-2">
+                <div class="md:flex flex-1 flex-row gap-2">
                     <div v-for="(picture, index) in pictures" :key="index" class="flex flex-1 flex-col group overflow-hidden">
                         <img 
                             class="object-cover h-full transition-transform duration-300 transform group-hover:scale-110"
@@ -19,12 +19,12 @@
                 </div>
             </div>
         <div class="flex flex-1 flex-col gap-2">
-            <div class="hidden md:flex flex-1 flex-row gap-2">
+            <div class=" md:flex flex-1 flex-row gap-2">
                 <div class="flex flex-1 flex-col  group overflow-hidden">
                   <!-- img_04 -->
                   <img class="object-cover h-full transition-transform duration-300 transform group-hover:scale-110" loading="lazy" src="/grace-22.jpeg">  
                 </div>
-                <div class="hidden md:flex flex-1 flex-col group overflow-hidden">
+                <div class="md:flex flex-1 flex-col group overflow-hidden">
                   <!-- img_05 -->
                   <img class="object-cover h-full transition-transform duration-300 transform group-hover:scale-110" loading="lazy" src="/grace-21.jpeg">
                 </div>
