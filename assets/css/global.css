@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Pacifico&display=swap');
+
+.cute-font {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cute-font-2 {
+    font-family: "La Belle Aurore", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    color: white;
+}
+
+.slider {
+    height: auto;
+    /* Automatically adjust height based on content */
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Prevent content overflow */
+    padding: 1rem;
+    /* Add padding to prevent tight spacing */
+}
+
+.slider::before,
+.slider::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 10%;
+    /* Narrower gradient for larger images */
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+}
+
+.slide-track2 {
+    display: flex;
+    gap: 1.5rem;
+    /* Add space between items */
+    animation: scroll2 20s linear infinite;
+    /* Slower animation for larger images */
+    align-items: center;
+    /* Ensure images align vertically */
+}
+
+.slide {
+    flex-shrink: 0;
+    /* Prevent shrinking */
+    flex-grow: 1;
+    /* Allow flexible sizing */
+    max-width: 200px;
+    /* Prevent overflow */
+    max-height: 150px;
+    /* Maintain aspect ratio */
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slide:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(calc(-200px * 5));
+        /* Adjust based on larger image size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide-track2 {
+        width: calc(100px * 15);
+        /* Reduce size for smaller screens */
+    }
+
+    .slide {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    @keyframes scroll2 {
+        0% {
+            transform: translateX(0px);
+        }
+
+        100% {
+            transform: translateX(calc(-100px * 5));
+            /* Match smaller size */
+        }
+    }
+}
